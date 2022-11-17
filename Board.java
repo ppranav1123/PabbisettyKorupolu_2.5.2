@@ -92,6 +92,13 @@ public class  Board{
     return tempPhrase;
   }  
 
+  /*
+   * Preconditions:
+   *  guess is a string
+   * Postconditions:
+   *  the instance variable phrase exists
+   *  the instance variable foundLetter exists
+   */
   public boolean guessLetter(String guess)
   {
     boolean foundLetter = false;
@@ -105,11 +112,13 @@ public class  Board{
         newSolvedPhrase += guess + " ";
         foundLetter = true;
       }
+      //otherweise, return the string as it is.
       else
       {
         newSolvedPhrase += solvedPhrase.substring(i * 2, i * 2 + 1) + " ";  
       }
     }
+    //return solvedPhrase and foundLetter.
     solvedPhrase = newSolvedPhrase;
     return foundLetter;
   } 
