@@ -20,7 +20,12 @@ public class  Board{
     System.out.println("Phrase: " + phrase); //temp test code
   }
   /* your code here - accessor(s) */
-  
+  public String getSolvedPhrase(){
+    return solvedPhrase;
+  }
+  public String getPhrase(){
+    return phrase;
+  }
   /* your code here - mutator(s)  */
 
 

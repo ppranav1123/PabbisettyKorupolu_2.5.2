@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Player
 {
   /* your code here - attributes */
-  public String name = ""; 
-  public int points;
+  private String name = ""; 
+  private int points;
   /* your code here - constructor(s) */ 
   public Player(String inputName)
   {
@@ -24,8 +24,12 @@ public class Player
     p.name = "Overwritten Name";
   }
   /* your code here - accessor(s) */ 
-  public String getName(){  /* incomplete */  }
-  public int getPoints(){/* incomplete */}
+  public String getName(){
+    return name;
+  }
+  public int getPoints(){
+    return points;
+  }
 
   /* your code here - mutator(s) */ 
   public void setName(String inputName){/* incomplete */}
